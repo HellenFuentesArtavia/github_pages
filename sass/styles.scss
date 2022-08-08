@@ -1,0 +1,310 @@
+@import "config";
+@import "mobile";
+
+* {
+  font-family: $font-stack;
+}
+
+body {
+  margin: 0;
+  padding-top: 20px;
+}
+
+li,
+a {
+  text-decoration: none;
+}
+
+// header----------------------------------------------------------------------------------------------------------------------------------------
+.header {
+  position: sticky;
+  padding: 20px 0;
+  background-color: $header-background-color;
+}
+
+.header__logo--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Menu----------------------------------------------------------------------------------------------------------------------------------------
+
+.header__nav--menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .header__nav--ul {
+    list-style: none;
+    margin-right: 38px;
+  }
+
+  li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+
+  a {
+    padding: 0 15px;
+    transition: all 0.3s ease 0s;
+    color: $header-lyrics-color;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  a:hover {
+    color: $blue-color;
+  }
+}
+
+.header__nav--flag img {
+  width: 30px;
+  padding: 0 20px;
+}
+
+.header__nav--flag:focus {
+  background-color: $light-grey-color;
+}
+
+// Body ---------------------------------------------------------------------------------------------------------------------------------------
+
+.body__main--content {
+  margin: 0 18%;
+}
+
+// Img and sipnosis---------------------------------------------------------------------------------------------------------------------------------------
+
+.home-content__main {
+  display: flex;
+  border-radius: 16px;
+  border: 15px hidden 1px;
+  box-shadow: 0px 0px 5px $light-blue-color;
+  filter: drop-shadow(0px 0px 8px $light-blue-color);
+}
+
+.home__content--img {
+  width: 300%;
+}
+
+.home__content--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home__content--sipnosis {
+  padding: 20px;
+}
+
+// Search bar----------------------------------------------------------------------------
+
+.search-bar {
+  margin-top: 2%;
+  width: 95%;
+  height: 20px;
+  background-color: $white-color;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid $grey-color;
+}
+
+.search-bar > i {
+  font-size: 20px;
+  color: $grey-color;
+}
+
+.search-bar > input {
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+// Characters ----------------------------------------------------------------------------
+
+.section__tittle {
+  display: flex;
+  justify-content: space-between;
+}
+
+// See all is is all 3 sections
+#see-all {
+  list-style: none;
+  color: $blue-color;
+  text-decoration: none;
+}
+
+.characters__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.characters__container--img {
+  background: $transparent-color;
+  background-size: 219.74px 279px;
+  color: $white-color;
+  width: 219.74px;
+  height: 279px;
+  margin: 1%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.characters__container--img img {
+  border-radius: 20.5295px;
+  width: 219.74px;
+  height: 279px;
+}
+
+.characters__conainer--overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient($transparent-color 50.33%, $black-color 97.62%);
+  opacity: 0.9;
+  position: absolute;
+  border-radius: 20.5295px;
+}
+
+.characters__container h2 {
+  font-family: $font-stack;
+  font-size: 22px;
+  line-height: 28px;
+  z-index: 1;
+  position: absolute;
+}
+
+// Islands ----------------------------------------------------------------------------
+
+.islands__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.islands__container--img {
+  background: $transparent-color;
+  background-size: 300.05px 298.5px;
+  color: $white-color;
+  width: 300.05px;
+  height: 298.5px;
+  margin: 1%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.islands__container--img img {
+  border-radius: 20.5295px;
+  width: 300.05px;
+  height: 298.5px;
+}
+
+.island__name-location--container {
+  position: absolute;
+  width: 275.3px;
+  height: 74.24px;
+  left: 12.37px;
+  top: 211.89px;
+  letter-spacing: 0.15px;
+  border-radius: 9.27835px;
+  background-color: $dark-blue-color;
+  backdrop-filter: blur(6.18557px);
+}
+
+.island__name-location--container h2 {
+  font-family: $font-stack;
+  font-size: 22px;
+  margin: 0;
+  margin-top: 11px;
+  margin-left: 12px;
+}
+
+.island__name-location--container span {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 12px;
+}
+
+.island__name-location--container span h3 {
+  margin: 0;
+  margin-left: 8px;
+}
+
+// Objects ----------------------------------------------------------------------------
+
+.mist-objects__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+}
+.mist-object__container {
+  display: flex;
+  margin-bottom: 32px;
+}
+.mist-object__image {
+  position: absolute;
+}
+.mist-object__image img {
+  width: 263.22px;
+  height: 254.29px;
+}
+
+.mist-object__text {
+  display: flex;
+  flex-direction: column;
+  width: 297.42px;
+  height: 254.29px;
+  background: $dark-blue-color;
+  backdrop-filter: blur(5.94839px);
+  border-radius: 0px 8.92258px 8.92258px 0px;
+  margin-left: 163px;
+  color: $white-color;
+}
+
+.mist-object__text h2 {
+  padding-left: 11.8968px;
+}
+.mist-object__text p {
+  padding-left: 11.8968px;
+  font-size: 18px;
+}
+
+// Footer -----------------------------------------------------------------------------
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 271px;
+  padding: 1rem;
+  background-color: $blue-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+}
+.footer img {
+  width: 97px;
+  height: 89px;
+}
+
+.footer p {
+  color: $white-color;
+  width: 286px;
+  height: 48px;
+  text-align: left;
+  margin: 0;
+}
+
+// Mobile first --------------------------------------------------------------------------
