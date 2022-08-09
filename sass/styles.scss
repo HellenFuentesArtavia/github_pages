@@ -338,10 +338,10 @@ a {
   margin: 0;
 }
 
-// Mobile first --------------------------------------------------------------------------
+// Mobile first ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @media (max-width: 1380px) {
-  // characters ------------------------------------------------------------------------------------------
+  // Characters ------------------------------------------------------------------------------------------
   .characters__container--img {
     background-size: 40% 40%;
     width: 23%;
@@ -396,6 +396,8 @@ a {
   }
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 @media (max-width: 1245px) {
   .mist-objects__container {
     justify-content: space-between;
@@ -419,6 +421,8 @@ a {
   }
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 @media (max-width: 1024px) {
   .characters__container h2 {
     font-size: 18px;
@@ -437,7 +441,9 @@ a {
   }
 }
 
-@media (max-width: 800px) {
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: 830px) {
   // margin for sections------------------------------------------------------------------
   .search-bar {
     margin-left: 10%;
@@ -684,6 +690,108 @@ a {
   .mist-objects__container {
     justify-content: center;
   }
+}
 
-  // Footer --------------------------------------------------------------------------------
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: 650px) {
+  .section__tittle h1 {
+    font-size: 22px;
+  }
+
+  // characters --------------------------------------------------------------------------
+
+  .characters__container h2 {
+    font-size: 16px;
+  }
+
+  .characters__container {
+    overflow: auto;
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  .characters__container--img {
+    background-size: 181.94px 231px;
+    width: 181.94px;
+    height: 231px;
+    display: inline-block;
+    position: relative;
+  }
+  .characters__container--img img {
+    position: absolute;
+  }
+
+  .characters__conainer--overlay {
+    width: 181.94px;
+    height: 231px;
+    position: absolute;
+  }
+
+  .characters__container h2 {
+    top: 85%;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+  }
+
+  // Islands --------------------------------------------------------------------------
+
+  .islands__container {
+    overflow: auto;
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  .islands__container--img {
+    background-size: 194px 193px;
+    width: 194px;
+    height: 193px;
+    display: inline-block;
+  }
+
+  .island__name-location--container {
+    position: absolute;
+    width: 175px;
+    height: 58.24px;
+    left: 12.37px;
+    top: 211.89px;
+    top: 80%;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+  }
+
+  .island__name-location--container h2 {
+    font-size: 14px;
+  }
+
+  .island__name-location--container h3 {
+    font-size: 12px;
+  }
+
+  // Mist Objects --------------------------------------------------------------------------
+
+  .mist-object__container h2 {
+    font-size: 18px;
+  }
+
+  .mist-object__container p {
+    font-size: 16px;
+  }
+
+  .mist-objects__container {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .mist-object__container {
+    width: 100%;
+  }
+
+  .mist-object__text {
+    width: 100%;
+  }
 }
