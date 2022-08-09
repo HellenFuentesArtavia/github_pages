@@ -5,7 +5,8 @@
       src="https://kit.fontawesome.com/8c4f35eae8.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/styles.min.css" />
+    <script src="js/readMore.js"></script>
+    <link rel="stylesheet" href="/css/styles.min.css" />
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,6 +23,12 @@
         </a>
       </div>
 
+      <input type="checkbox" id="change__hamburguer" />
+      <a class="hamburguer__menu" href="#">
+        <span></span>
+        <label for="change__hamburguer""></label>
+      </a>
+
       <nav class="header__nav--menu">
         <ul class="header__nav--ul">
           <li>
@@ -31,12 +38,17 @@
           <li><a href="#">Islands</a></li>
           <li><a href="#">Mist Objects</a></li>
         </ul>
-        <a href="#" class="header__nav--flag"
-          ><img src="icons/usa.svg" alt=""
-        /></a>
-        <a href="#" class="header__nav--flag"
-          ><img src="icons/spain.svg" alt=""
-        /></a>
+        <div class="header__nav--flags">
+          <span class="header__nav--flag">
+          <h3>English</h3>
+          <a href="#"><img src="icons/usa.svg" alt=""/></a>
+          </span>
+
+          <span class="header__nav--flag">
+          <h3>Spanish</h3>
+          <a href="#"><img src="icons/spain.svg" alt=""/></a>
+        </span>
+        </div>
       </nav>
     </header>
     <!-- End Header-------------------------------------------------------------------------------------------------------------------------------------->
@@ -46,10 +58,7 @@
       <!-- Start Home Page Image with Sipnosis--------------------------------------------------------------------------------------------------------->
       <div class="home-content__main">
         <div class="home__content--img">
-          <img
-            src="images/onepiece.svg"
-            alt="One Pice Principal Characters"
-          />
+          <img src="images/onepiece.svg" alt="One Pice Principal Characters" />
         </div>
         <div class="home__content--sipnosis">
           <h1>Sipnosis</h1>
@@ -59,8 +68,9 @@
             <br /><br />
             It is the home island of Monkey D. Luffy and the starting point of
             his journey into piracy, as well as the home island of his father,
-            Monkey D. Dragon.
+            Monkey D. Dragon. <span id="dots">...</span>
             <br /><br />
+            <span id="more">
             This is also the adopted home of Portgas D. Ace after the death of
             his mother and the home of Sabo and his family.
             <br /><br />
@@ -70,7 +80,14 @@
             <br /><br />
             It is located in the Red Line and is the geographical antipode of
             Mary Geoise.
+            </span>
           </p>
+          <div class="home__sipnosis--read-all">
+            <span id="arrow">
+              <i class="fas fa-angle-down"></i>
+            </span> 
+            <span onclick="readMore_funct()" id="read-more__button">Read All</span>
+          </div>
         </div>
       </div>
       <!-- End Home Page Image with Sipnosis-------------------------------------------------------------------------------------------------------------->
@@ -93,10 +110,7 @@
         </div>
         <div class="characters__container">
           <div class="characters__container--img">
-            <img
-              src="images/monkeydluffy.svg"
-              alt="Monkey D. Luffy"
-            />
+            <img src="images/monkeydluffy.svg" alt="Monkey D. Luffy" />
             <h2>Monkey D. Luffy</h2>
             <div class="characters__conainer--overlay"></div>
           </div>

@@ -1,8 +1,11 @@
+$button-size: 20px;
+$button-color: #171717;
+
 @function calc-line-height($n) {
   @return $n / 5;
 }
 
-@mixin css3-rotation($n) {
+@mixin css-rotation($n) {
   -ms-transform: rotate($n);
   -webkit-transform: rotate($n);
   transform: rotate($n);
